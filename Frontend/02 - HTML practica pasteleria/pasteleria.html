@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(207, 151, 151);
+            padding: 15px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            image-orientation: from-image;
+        }
+        .header_logo{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;  
+    border:rgb(0, 0, 0) solid 1px;
+    margin:0 0 0 1px;
+}
+
+.header_text{   
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;    
+    font-size:2rem;
+    
+}
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(66, 179, 199);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header_logo"> <img src="file:///C:/Users/lenovo/Documents/Launch%20X/Modulo%2002-HTML/assets/LOGO%20PASTELERIA%20(4).png" alt="hacker" width="200px" height="200px"> </div>
+        
+        <div class="header_text"><h1>Magic-cakes the developers</h1></div>
+    </header>
+    <div style="text-align: right;"><h2>Bienvenido a tu pasteleria online</h2>
+        <!--Parrafos-->
+        <p> En nuestra pasteleria encontraras todo tipo de pasteles e incluso los podras ordenar a tu gusto <br> 
+            ya que tenemos nuestra mejor plataforma para diceñar tus pasteles. <br>
+            No lo pienses mas y diceña tu propio pastel.
+        </p></div>
+    
+<div class="center" style="text-align: center;" >
+    <h3>¡Sabores que enamoran!</h3>
+    <table  style="margin: 0 auto;">
+        <tr>
+          <td><div class="header_logo"> <img src="assets/pasteles/combinado.jpeg" alt="Cake" width="450px" height="300px"> </div> <h4>Pastel red velvet</h4> <h3>$ 400.00</h3> <h5>¿Deseas cambiar/combinar el sabor de tu pastel?</h5>
+            <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+            <label for="topping1">Chocolate</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+            <label for="topping2">Fresa</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+            <label for="topping3">Vainilla</label><br>
+            <input type="checkbox" id="topping4" name="topping4" value="Moka">
+            <label for="topping3">Moka</label><br><br> </td>
+          <td><div class="header_logo"> <img src="assets/pasteles/compromiso.jpg" alt="Cake" width="450px" height="300px"> </div> <h4>Pastel de tres leches</h4> <h3>$ 500.00</h3> <h5>¿Deseas cambiar/combinar el sabor de tu pastel?</h5>
+            <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+            <label for="topping1">Chocolate</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+            <label for="topping2">Fresa</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+            <label for="topping3">Vainilla</label><br>
+            <input type="checkbox" id="topping4" name="topping4" value="Moka">
+            <label for="topping3">Moka</label><br><br> </td> </td>
+          <td><div class="header_logo"> <img src="assets/pasteles/para bodas.jpg" alt="Cake" width="450px" height="300px"> </div> <h4>Pastel de tres leches ED</h4> <h3>$ 850.00</h3> <h5>¿Deseas cambiar/combinar el sabor de tu pastel?</h5>
+            <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+            <label for="topping1">Chocolate</label><br>
+            <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+            <label for="topping2">Fresa</label><br>
+            <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+            <label for="topping3">Vainilla</label><br>
+            <input type="checkbox" id="topping4" name="topping4" value="Moka">
+            <label for="topping3">Moka</label><br><br> </td> </td>
+        </tr>
+        <tr>
+            <td><div class="header_logo"> <img src="assets/pasteles/pastel_chocolate.jpg" alt="Cake" width="450px" height="300px"> </div> <h4>Pastel choko moka</h4> <h3>$ 250.00</h3> <h5>¿Deseas cambiar/combinar el sabor de tu pastel?</h5>
+                <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+                <label for="topping1">Chocolate</label><br>
+                <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+                <label for="topping2">Fresa</label><br>
+                <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+                <label for="topping3">Vainilla</label><br>
+                <input type="checkbox" id="topping4" name="topping4" value="Moka">
+                <label for="topping3">Moka</label><br><br> </td>  </td>
+            <td><div class="header_logo"> <img src="assets/pasteles/pasteldehelados.jpg" alt="Cake" width="450px" height="300px"> </div> <h4>Pastel helado con chocogalleta</h4> <h3>$ 300.00</h3> <h5>¿Deseas cambiar/combinar el sabor de tu pastel?</h5>
+                <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+                <label for="topping1">Chocolate</label><br>
+                <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+                <label for="topping2">Fresa</label><br>
+                <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+                <label for="topping3">Vainilla</label><br>
+                <input type="checkbox" id="topping4" name="topping4" value="Moka">
+                <label for="topping3">Moka</label><br><br> </td> </td>
+            <td><div class="header_logo"> <img src="assets/pasteles/Tarta-fresas.jpg" alt="Cake" width="450px" height="300px"> </div> <h4>Tarta de fresas</h4> <h3>$ 100.00</h3> <h5>¿Deseas cambiar/combinar el sabor de tu pastel?</h5>
+                <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+                <label for="topping1">Chocolate</label><br>
+                <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+                <label for="topping2">Fresa</label><br>
+                <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+                <label for="topping3">Vainilla</label><br>
+                <input type="checkbox" id="topping4" name="topping4" value="Moka">
+                <label for="topping3">Moka</label><br><br> </td> </td>
+        </tr>
+    </table>
+</div>
+
+
+
+<h2>Adornos para que decores tu pastel</h2><br>
+<div class="center" style="text-align: center;" >
+    <h3>¡Selecciona el adorno que desees!</h3>
+    <table  style="margin: 0 auto;">
+        <tr>
+          <td><div class="header_logo"> <img src="assets/pasteles/Adornos/bebe.jpg" alt="Adorno bebe" width="450px" height="300px"> </div> <input type="radio" id="bcolors" name="decoracion" value="Bcolors">
+            <label for="bcolors">Bcolors</label><br>  </td>
+          <td><div class="header_logo"> <img src="assets/pasteles/Adornos/boda.jpg" alt="Adorno boda" width="450px" height="300px"> </div> <input type="radio" id="compromiso" name="decoracion" value="Compromiso">
+            <label for="compromiso">Compromiso</label><br>  </td>
+          <td><div class="header_logo"> <img src="assets/pasteles/Adornos/cara feliz.jpg" alt="Adorno cara feliz" width="450px" height="300px"> </div> <input type="radio" id="cara feliz" name="decoracion" value="Cara feliz">
+            <label for="cara feliz">Cara Feliz</label><br><br>  </td>
+        </tr>
+        <tr>
+            <td><div class="header_logo"> <img src="assets/pasteles/Adornos/felizCumple.jpg" alt="cumple" width="450px" height="300px"> </div> <input type="radio" id="cumple" name="decoracion" value="Cumple">
+                <label for="cumple">Cumple</label><br>  </td>
+            <td><div class="header_logo"> <img src="assets/pasteles/Adornos/FelizCumpleEspacial.jpg" alt="cumple espacial" width="450px" height="300px"> </div> 
+                <input type="radio" id="cumpleespacial" name="decoracion" value="CumpleEspacial">
+                <label for="cumpleespacial">CumpleEspacial</label><br>  </td>
+            <td><div class="header_logo"> <img src="assets/pasteles/Adornos/niños.jpg" alt="zoo" width="450px" height="300px"> </div> <input type="radio" id="zoo" name="decoracion" value="Zoo">
+                <label for="Zoo">Guacamole</label><br><br>  </td>
+        </tr>
+    </table>
+</div>
+
+<h2>Haz tu pedido ahora mismo, no lo pienses mas</h2><br>
+
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="numero1">Número Telefonico</label><br>
+        <input type="number" id="numero1" name="numero1"><br><br>
+        <label for="correo1">Correo Electronico</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        <label for="nombre">Descripcion General del pastel</label><br>
+        <input type="text" id="descripcion" name="descripcion"><br><br>
+        <input type="reset"><br>
+    </form>
+    
+<br><br>
+
+    <input type="submit" value="Realizar pedido ahora"><br>
+ <br>
+        
+
+
+    
+
+
+    <footer>
+        <h2> Contactanos </h2>
+        <p>WhatsApp:  55-6787-7865 <br>
+        Estamos en luis echeverria #12. Col. Melchor Ocampo. Ecatepec de Morelos, Estado de México.</p>
+        <h2> Horarios de atencion </h2>
+        <p>De Lunenes a Domingo de 10:00 am - 10:00 pm</p>
+    </footer>
+        
+</body>
+</html>
